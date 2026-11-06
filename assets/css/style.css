@@ -298,6 +298,7 @@ body.dark {
 @media (min-width:992px) {
     .immagineLavori{
         width: 30%;
+        margin: 0 auto;
     }
     .stiliCardServizi {
         width: 33%;
