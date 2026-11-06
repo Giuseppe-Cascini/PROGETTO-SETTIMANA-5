@@ -102,10 +102,6 @@ nav ul {
     cursor: pointer;
 }
 
-.iNostriLavori:hover {
-    cursor: pointer;
-    transform: translateY(-6px);
-}
 .contenitoreDeiServizi {
     display: flex;
     flex-direction: column;
@@ -149,6 +145,11 @@ nav ul {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
     width: 100%;
+}
+
+.immagineLavori:hover {
+    cursor: pointer;
+    transform: translateY(-6px);
 }
 
 .contenitoreDelTeam {
@@ -228,4 +229,83 @@ nav ul {
     cursor: pointer;
     background-color: hsl(150, 60%, 30%);
     transform: translateY(-3px);
+}
+
+.logoNome p {
+    color:#ffffff; 
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+}
+.dark #site-header {
+    background-color: black;
+    color: white;
+}
+
+@media (min-width:768px) {
+    #site-header{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 6px;
+    }
+
+    .cardLavori {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .immagineLavori {
+        width: 49%;
+        margin: 2px;
+    }
+
+    .contenitoreDeiServizi {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .stiliCardServizi {
+        width: 48%;
+    }
+    .stiliCardServizi:last-child {
+        width: 97.5%;
+    }
+
+    .contenitoreDelTeam {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .stiliCardTeam {
+        width: 48%;
+    }
+
+    .stiliCardTeam:last-child {
+        width: 97.5%;
+    }
+    #site-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 10px;
+        text-align: start;
+    }
+    
+}
+
+@media (min-width:992px) {
+    .immagineLavori{
+        width: 30%;
+    }
+    .stiliCardServizi {
+        width: 33%;
+        flex: 1;
+    }
+    .stiliCardTeam {
+        width: 33%;
+        flex: 1;
+    }
+
 }
